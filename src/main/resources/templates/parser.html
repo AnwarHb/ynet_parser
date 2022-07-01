@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>XML to HTML tabke parser</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../../css/gtvg.css" data-th-href="@{/css/gtvg.css}" />
+    <style>
+
+body {
+  font-family: sans-serif,Arial, Helvetica ;
+    margin-right: 10x;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.logo {
+   width: 150px;
+   height: 100px;
+}
+.logo img {
+   height: 100%;
+   width: 100%;
+}
+.contentBox {
+    margin: 0 auto;
+    width: 100%;
+}
+table, th, td {
+   padding: 10px;
+   border: 2px solid red;
+   border-collapse: collapse;
+   border-color: red;
+   border-bottom: 1px solid #ddd;
+}
+
+</style>
+
+</head>
+<body dir="rtl">
+<h1 style="text-align: center;">Breaking News From YNET</h1>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://upload.wikimedia.org/wikipedia/he/thumb/f/fa/YnetLogo.svg/1920px-YnetLogo.svg.png" alt="" width="222" height="100" /></p>
+<div class="contentBox">
+    <div th:action="@{/}" style="margin:0">
+
+        <p  th:utext="${tableOfFeed}"></p>
+
+    </div>
+
+</div>
+</body>
+</html>
