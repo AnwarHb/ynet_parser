@@ -7,7 +7,7 @@ pipeline {
         // have to set premessions and then build with the gradelw file
         stage('Cloning Git') {
             steps {
-                git clone 'https://github.com/AnwarHb/ynet_parser.git'
+                git 'https://github.com/AnwarHb/ynet_parser.git'
             }
         }
         stage('Build') {
