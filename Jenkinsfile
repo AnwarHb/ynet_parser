@@ -27,7 +27,7 @@ pipeline {
         }
         stage("Application Running"){
              steps{
-                      sh 'sudo nohup java -jar /build/lib/untitled-1.0-SNAPSHOT.jar &'
+                      sh 'sudo nohup java -jar parser/build/lib/parser-1.0-SNAPSHOT.jar &'
 
                       }
              post {
