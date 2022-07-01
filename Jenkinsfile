@@ -27,7 +27,8 @@ pipeline {
         }
         stage("Application Running"){
              steps{
-                      sh 'sudo nohup java -jar ./build/lib/untitled-1.0-SNAPSHOT.jar &'
+                      sh 'jps | grep demo-0.0.1 | awk \'{print "kill -9 "$1}\' | bash -x'
+                      sh 'JENKINS_NODE_COOKIE=do_not_kill nohup java -jar ./build/lib/untitled-1.0-SNAPSHOT.jar &'
 
                       }
              post {
