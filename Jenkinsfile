@@ -27,18 +27,19 @@ pipeline {
         }
         stage("Application Running"){
              steps{
-                      sh 'sudo nohup java -jar .build/lib/untitled-1.0-SNAPSHOT.jar &'
+                      sh 'sudo nohup java -jar /build/lib/untitled-1.0-SNAPSHOT.jar &'
 
                       }
-                 post {
+             post {
 
                       success {
                             slackSend  channel: '#just-for-training',color: '#00FF00', message: 'Built Successfully!!'}
 
 
                         failure {
-                                slackSend channel: '#just-for-training',color: '#00FF00',failOnError:true ,message:"Buil>
-                    }
+                                slackSend channel: '#just-for-training',color: '#00FF00',failOnError:true ,message:"Buil>}
+                   
                 }
             }
 }
+    }       
