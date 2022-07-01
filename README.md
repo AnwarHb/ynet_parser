@@ -1,6 +1,6 @@
 # ynet XML to HTML parser 
 
-- the following is a JAVA application that reads the “Breaking News” from YNet new service and parses and Presents the breaking newa XML in an HTML table format.
+- the following is a JAVA application that reads the “Breaking News” from YNet news service and parses and Presents the breaking newa XML in an HTML table format.
 - A Jenkins CI/CD pipeline was created to build and run the application.
 
 #### Run the code on your machine:
