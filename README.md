@@ -14,13 +14,14 @@
 `./gradlew  build`
 - run the jar file:
 ` java -jar ./build/libs/untitled-1.0-SNAPSHOT.jar`
+
 you can access the application with (http://localhost:8090 )
 
 [![](https://github.com/AnwarHb/ynet_parser/blob/master/application_running.png?raw=true)](https://github.com/AnwarHb/ynet_parser/blob/master/application_running.png?raw=true)
 
 
 #### Jenkins pipeline:
-A jenkins pipline wa created to manage the app -
+A jenkins pipline was created to manage the app -
 
 [![](https://github.com/AnwarHb/ynet_parser/blob/master/jenkins.png?raw=true)](https://github.com/AnwarHb/ynet_parser/blob/master/jenkins.png?raw=true)
 
