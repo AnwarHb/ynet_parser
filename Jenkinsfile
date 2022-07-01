@@ -37,9 +37,9 @@ pipeline {
 
 
                         failure {
-                                slackSend channel: '#just-for-training',color: '#00FF00',failOnError:true ,message:"Buil>}
+                                slackSend channel: '#just-for-training',color: '#00FF00',failOnError:true ,message:'faiure!!'}
                    
                 }
             }
 }
-    }       
+    }    
